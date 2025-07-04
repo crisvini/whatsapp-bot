@@ -2,7 +2,7 @@
 .env
 
 # Dados sensíveis
-contatos.json
+contacts/
 
 # Node
 node_modules/

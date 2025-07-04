@@ -53,7 +53,7 @@ function formatNames(names) {
 }
 
 async function sendMessagesWithAnimation() {
-    const contacts = JSON.parse(fs.readFileSync('./contatos.json', 'utf-8'));
+    const contacts = JSON.parse(fs.readFileSync('./contacts/contacts.json', 'utf-8'));
     const imagePath = path.join(__dirname, 'images', 'convite.jpeg');
     const media = MessageMedia.fromFilePath(imagePath);
 
@@ -61,7 +61,7 @@ async function sendMessagesWithAnimation() {
         const { number, names } = contact;
         const chatId = number + '@c.us';
 
-        const isPlural = names.length > 1;
+        const isPlural = names.length > 1;1
         const formattedNames = formatNames([...names]); // Copy to avoid modifying the original
 
         const message = `${formattedNames}, é com muito carinho que convidamos ${isPlural ? 'vocês' : 'você'} para celebrar nossas Bodas de Prata, em uma pequena cerimônia. Devido à capacidade do local, este convite é individual e intransferível. Agradecemos a compreensão. Precisamos que confirme presença até dia 01/09 com a Joice no telefone ${process.env.CONTACT_PHONE}. Para se sentirem confortáveis os lugares serão marcados.`;
