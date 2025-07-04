@@ -1,0 +1,34 @@
+# Ambiente
+.env
+
+# Dados sensíveis
+contatos.json
+
+# Node
+node_modules/
+package-lock.json
+
+# WhatsApp Web.js
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build (caso crie futuramente)
+dist/
+build/
+
+# Imagens (caso não queira versionar as pessoais)
+images/
